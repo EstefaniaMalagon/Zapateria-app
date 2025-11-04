@@ -9,55 +9,55 @@ Aplicación web desarrollada con Bootstrap (frontend) y Express + TypeScript (ba
 
 ### Frontend
 
-HTML5 
-CSS3 + Bootstrap 5.3
-JavaScript ES6+ 
+- HTML5 
+- CSS3 + Bootstrap 5.3
+- JavaScript ES6+ 
 
 ### Backend
 
-Express.js 
-TypeScript 
-Node.js 18+ 
+- Express.js 
+- TypeScript 
+- Node.js 18+ 
 
 ## Rutas del Backend
 
 ### Rutas de Productos (/api/products)
 
-- GET /api/products
-Descripción: Obtiene la lista completa de productos disponibles en el catálogo
-Respuesta: Array JSON con todos los productos (9 productos)
+GET /api/products
+- Descripción: Obtiene la lista completa de productos disponibles en el catálogo
+- Respuesta: Array JSON con todos los productos (9 productos)
 
-- GET /api/products/:id
-Descripción: Obtiene un producto específico por su ID
-Parámetros: id (number) - ID del producto (1-9)
-Respuesta: Objeto JSON con los datos del producto
-Validaciones: Verifica que el ID sea válido y que el producto exista
+GET /api/products/:id
+- Descripción: Obtiene un producto específico por su ID
+- Parámetros: id (number) - ID del producto (1-9)
+- Respuesta: Objeto JSON con los datos del producto
+- Validaciones: Verifica que el ID sea válido y que el producto exista
 
 ### Rutas del Carrito (/api/cart)
 
-- GET /api/cart
-Descripción: Obtiene los productos del carrito de la sesión actual
-Respuesta: Array JSON con los items del carrito [{productId, qty}, ...]
+GET /api/cart
+- Descripción: Obtiene los productos del carrito de la sesión actual
+- Respuesta: Array JSON con los items del carrito [{productId, qty}, ...]
 
-- GET /api/cart/total
-Descripción: Calcula y retorna el total del carrito actual
-Respuesta: JSON con {total, itemCount, currency}
+GET /api/cart/total
+- Descripción: Calcula y retorna el total del carrito actual
+- Respuesta: JSON con {total, itemCount, currency}
 
-- POST /api/cart/add
-Descripción: Agrega un producto al carrito o incrementa su cantidad
-Validaciones:
-Verifica que productId y qty sean números válidos
-Valida que la cantidad sea mayor a 0
-Verifica que el producto exista (ID entre 1-9)
-Comprueba que haya stock suficiente
+POST /api/cart/add
+- Descripción: Agrega un producto al carrito o incrementa su cantidad
+- Validaciones:
+Verifica que productId y qty sean números válidos.
+Valida que la cantidad sea mayor a 0.
+Verifica que el producto exista (ID entre 1-9).
+Comprueba que haya stock suficiente.
 
-- POST /api/cart/remove
-Descripción: Elimina completamente un producto del carrito
-Validaciones: Verifica que el productId sea válido
+POST /api/cart/remove
+- Descripción: Elimina completamente un producto del carrito
+- Validaciones: Verifica que el productId sea válido
 
-- POST /api/cart/clear
-Descripción: Vacía completamente el carrito de la sesión
-Respuesta: {ok: true, cart: []}
+POST /api/cart/clear
+- Descripción: Vacía completamente el carrito de la sesión
+- Respuesta: {ok: true, cart: []}
 
 ## Funcionamiento del Carrito
 
@@ -166,8 +166,7 @@ async function renderCart() {
 ## Instalación y Ejecución
 
 1. Clonar el repositorio
-git clone <url-del-repositorio>
-cd zapateria-app
+git clone https://github.com/EstefaniaMalagon/Zapateria-app.git
 
 2. Instalar dependencias
 npm install
