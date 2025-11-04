@@ -174,11 +174,11 @@ git clone https://github.com/EstefaniaMalagon/Zapateria-app.git
 npm install
 
 3. Modo desarrollo
-npm run dev
+npm run dev -
 El servidor se ejecutará en: http://localhost:3000
 
 4. Compilar para producción
-npm run build
+npm run build -
 npm start
 
 5. Ejecutar pruebas
