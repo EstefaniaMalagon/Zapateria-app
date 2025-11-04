@@ -19,6 +19,8 @@ Aplicación web desarrollada con Bootstrap (frontend) y Express + TypeScript (ba
 - TypeScript 
 - Node.js 18+ 
 
+<img width="696" height="587" alt="image-2" src="https://github.com/user-attachments/assets/0552b47c-8a8c-4473-9611-126266e1f4c8" />
+
 ## Rutas del Backend
 
 ### Rutas de Productos (/api/products)
