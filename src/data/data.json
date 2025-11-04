@@ -1,0 +1,12 @@
+{
+  "README": "Este archivo almacena los carritos de compra de los usuarios",
+  "version": "1.0.0",
+  "lastUpdated": "2025-10-30T00:00:00.000Z",
+  "carts": {},
+  "user_1762224068683_y40hpr": [
+    {
+      "productId": 3,
+      "qty": 1
+    }
+  ]
+}
